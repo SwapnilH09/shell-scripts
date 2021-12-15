@@ -14,3 +14,9 @@ sudo sed -i "s/\(^VirtualHost:\).*/\1{8080}/" /etc/apache2/sites-enabled/000-de\
 fault.conf
 echo "done..."
 
+echo "restart apache server....."
+sudo systemctl restart apache2
+sudo service apache2 restart
+
+sudo systemctl status apache2.service
+
