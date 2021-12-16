@@ -5,7 +5,9 @@
 ##################################################
 
 echo "changing to port number 8080 from default port 80 in /etc/apache2/ports.conf file........"
-sudo sed -i "s/\(^LISTEN\).*/\1{8080}/" /etc/apache2/ports.conf
+#sudo sed -i "s/\(^Listen\).*/\1{8080}/" /etc/apache2/ports.conf
+sudo sed -i "s/\(^Listen \).*/\18080/" /etc/apache2/ports.conf
+
 
 echo "done..."
 
