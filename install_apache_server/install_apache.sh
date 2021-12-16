@@ -16,3 +16,6 @@ sudo systemctl is-enabled apache2.service
 
 ehco "returning status of server......."
 sudo systemctl status apache2.service
+
+########### useful links ###########
+#https://www.cyberciti.biz/faq/how-to-install-apache-on-ubuntu-20-04-lts/

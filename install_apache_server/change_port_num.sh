@@ -12,8 +12,9 @@ sudo sed -i "s/\(^Listen \).*/\18080/" /etc/apache2/ports.conf
 echo "done..."
 
 echo "changing port number in virtual host configuration file /etc/apache2/sites-enabled.000-default.conf......."
-sudo sed -i "s/\(^VirtualHost:\).*/\1{8080}/" /etc/apache2/sites-enabled/000-de\
-fault.conf
+#sudo sed -i "s/\(^VirtualHost:\).*/\1{8080}/" /etc/apache2/sites-enabled/000-de\
+#fault.conf
+sudo -i sed "s/\(<VirtualHost \*:\).*/\18080>/" /etc/apache2/sites-enabled/000-default.conf
 echo "done..."
 
 echo "restart apache server....."
@@ -22,3 +23,7 @@ sudo service apache2 restart
 
 sudo systemctl status apache2.service
 
+
+############# useful links
+#https://ubiq.co/tech-blog/how-to-change-port-number-in-apache-in-ubuntu/
+#https://stackoverflow.com/questions/2464760/modify-config-file-using-bash-script
