@@ -19,3 +19,7 @@ sudo systemctl reload apache2
 
 echo "server status...."
 sudo systemctl status apache2.service
+
+
+#### resource ##########
+## https://www.techrepublic.com/article/how-to-use-the-apache-web-server-to-install-and-configure-a-website/
