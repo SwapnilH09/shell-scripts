@@ -8,3 +8,8 @@ Contains another script to configure the apache-server on port 8080 from default
 
 ## test_deployment
 ..about this dir..
+
+## virutal hosts
+hosting an index.html file on virtual hosts. <br>
+requires to specify Document root in configuration files /var/www/html/ <br>
+rollback to previous configuration.
